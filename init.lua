@@ -66,16 +66,15 @@ for _, data in pairs(baseMatsAndTextures) do
 			{data[1]}
 		}
 	})
-
-	minetest.register_abm({
-		label = "ABM for "..name,
-		nodenames = {name},
-		neighbors = {"air"},
-		interval = 11.0,
-		chance = 40,
-		min_y = -50,
-		catch_up = true,
-		action = basic_flowerbed_abm
-	})
-
 end
+
+minetest.register_abm({
+	label = "ABM for Flowerbeds",
+	nodenames = {"group:flowerbed"},
+	neighbors = {"air"},
+	interval = 11.0,
+	chance = 40,
+	min_y = -50,
+	catch_up = true,
+	action = basic_flowerbed_abm
+})
