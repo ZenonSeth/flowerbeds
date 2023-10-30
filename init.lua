@@ -37,7 +37,7 @@ local basic_flowerbed_abm = function(pos, node, active_object_count, active_obje
 	local checkAdj = {{1, 1}, {1, 0}, {1, -1}, {0, 1}, {0, -1}, {-1, 1}, {-1, 0}, {-1, -1}}
 	pos.y = pos.y + 1
 	local nodeAbove = minetest.get_node_or_nil(pos)
-	if not nodeAbove or not nodeAbove.name == "air" then
+	if not nodeAbove or nodeAbove.name ~= "air" then
 		return
 	end
 	for _, adj in pairs(checkAdj) do
