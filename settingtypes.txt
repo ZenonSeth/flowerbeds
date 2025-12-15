@@ -1,0 +1,5 @@
+flowerbeds_min_spread_time (Minimum time in seconds between spread checks) int 25 5 600
+flowerbeds_max_spread_time (Maximum time in seconds between spread checks) int 45 5 600
+flowerbeds_min_removed_time (Minimum time in seconds between checks to see if a flower has been removed) int 80 5 1200
+flowerbeds_max_removed_time (Maximum time in seconds between checks to see if a flower has been removed) int 120 5 1200
+flowerbeds_chance (The chance in percent of a flower spreading) int 25 1 100
