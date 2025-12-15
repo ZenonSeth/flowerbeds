@@ -29,36 +29,31 @@ Depending on the game you are playing the following mods should be present:
 
 ### flowerbeds_min_spread_time
 
-This setting sets the minimum time between checks.
-
-Defaults to 25 seconds.
+This setting sets the minimum time between checks. Defaults to 25 seconds.
 
 ### flowerbeds_max_spread_time
 
-This setting sets the maximum time between checks.
-
-Defaults to 45 seconds.
+This setting sets the maximum time between checks. Defaults to 45 seconds.
 
 ### flowerbeds_min_removed_time
 
 Once a flower bed has a flower it will regularly check to see if the flower has
 been removed and if it should check to see if a flower spreads to it. This is
-the minimum time for those checks.
-
-Defaults to 80 seconds.
+the minimum time for those checks. Defaults to 80 seconds.
 
 ### flowerbeds_max_removed_time
 
-This is the maximum time for checks to see if a flower has been removed.
-
-Defaults to 120 seconds.
+This is the maximum time for checks to see if a flower has been removed. Defaults to 120 seconds.
 
 ### flowerbeds_chance
 
 This is the chance out of 100 for an adjacent flower to spread to this flower
-bed.
+bed. Defaults to 25.
 
-Defaults to 25.
+## Screenshots
+<img width="400" src="https://content.luanti.org/uploads/0294e16507.png"/>
+<img width="400" src="https://content.luanti.org/uploads/52e00f7573.png"/>
+<img width="400" src="https://content.luanti.org/uploads/b82cf6b3f2.png"/>
 
 ## Credits
 - Main development: [Zenon Seth](https://github.com/ZenonSeth)
