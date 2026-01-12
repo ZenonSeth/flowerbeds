@@ -45,7 +45,7 @@ local sounds = {}
 local materials = {}
 
 -- compat with default and mcl
-if default then
+if core.get_modpath("default") then
   baseMatsAndTextures = {
     {"default:wood", "default_wood.png"},
     {"default:junglewood", "default_junglewood.png"},
@@ -59,7 +59,7 @@ if default then
   sounds.footstep = default.node_sound_dirt_defaults().footstep
   materials.coal_lump = "default:coal_lump"
   materials.dirt = "default:dirt"
-elseif mcl_trees and mcl_trees.woods and mcl_sounds then -- only mineclonia has mcl_trees.woods
+elseif core.get_modpath("mcl_trees") and mcl_trees.woods and core.get_modpath("mcl_sounds") then -- only mineclonia has mcl_trees.woods
 	addMclHardness = true
 	sounds = mcl_sounds.node_sound_wood_defaults()
   sounds.footstep = mcl_sounds.node_sound_dirt_defaults().footstep
@@ -94,7 +94,7 @@ elseif mcl_trees and mcl_trees.woods and mcl_sounds then -- only mineclonia has 
       end
     end
   end
-elseif mcl_core then -- voxelibre support, couldn't find wood table, hardcode some woods
+elseif core.get_modpath("mcl_core") then -- voxelibre support, couldn't find wood table, hardcode some woods
 	addMclHardness = true
 	sounds = mcl_sounds.node_sound_wood_defaults()
   sounds.footstep = mcl_sounds.node_sound_dirt_defaults().footstep
